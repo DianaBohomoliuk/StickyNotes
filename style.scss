@@ -1,0 +1,105 @@
+$bg-color: #F8F2EA;
+$primary-color: #58B4AE;
+$secondary-color: #D9AB7C;
+$font: 'Architects Daughter', cursive;
+
+.droppable{
+    opacity: .5;
+}
+body{
+    background-color: $bg-color;
+    box-sizing: border-box;
+    .container{
+        height: 90vh;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+.note{
+    width: 200px;
+    height: 180px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    span{
+        position: absolute;
+        top: 5px;
+        right: 2px;
+        transform: scale(1.2);
+    }
+    textarea{
+        width: 90%;
+        height: 90%;
+        font-size: 1em;
+        font-family: $font;
+        border: none;
+        outline: none;
+        resize: none;
+        background-color: transparent;
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+
+    }
+
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    .ui-button{
+        @extend .btn;
+        text-align: center;
+        padding: 1px 6px;
+        border-radius: 0 20px 20px 0 ;
+    }
+    .btn{
+        outline: none;
+        cursor: pointer;
+        border: 1px solid $bg-color;
+        background-color: $primary-color;
+        width: 200px;
+        color: $bg-color;
+        font-size: 1em;
+        font-family: $font;
+        transition: .4s;
+        &:first-child{
+            border-radius: 20px 0 0 20px;
+        }
+        &:hover{
+            background-color:darken($color: $primary-color, $amount: 10);
+        }
+
+    }
+}
+
+
+
+// **JQUERY UI STYLES **//
+.ui-selectmenu-menu{
+    ul{
+        border-radius: 0 0 20px 20px ;
+        background-color: $primary-color;
+        color: $bg-color;
+        font-family: $font;
+        .ui-state-active{
+            background-color: $primary-color;
+            border: none;
+            &:hover{
+                background-color:darken($color: $primary-color, $amount: 10);
+            }
+        }
+
+
+    }
+
+}
+
+.ui-tooltip{
+    font-size: .7em;
+    box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.55);
+}

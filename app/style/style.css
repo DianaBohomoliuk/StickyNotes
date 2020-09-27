@@ -1,0 +1,112 @@
+.droppable {
+  opacity: .5;
+}
+
+body {
+  background-color: #F8F2EA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .container {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.note {
+  width: 200px;
+  height: 180px;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.note span {
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.note textarea {
+  width: 90%;
+  height: 90%;
+  font-size: 1em;
+  font-family: "Architects Daughter", cursive;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+}
+
+.note textarea::-webkit-scrollbar {
+  width: 0;
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btns .ui-button {
+  text-align: center;
+  padding: 1px 6px;
+  border-radius: 0 20px 20px 0;
+}
+
+.btns .btn, .btns .ui-button {
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #F8F2EA;
+  background-color: #58B4AE;
+  width: 200px;
+  color: #F8F2EA;
+  font-size: 1em;
+  font-family: "Architects Daughter", cursive;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.btns .btn:first-child, .btns .ui-button:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
+.btns .btn:hover, .btns .ui-button:hover {
+  background-color: #439690;
+}
+
+.ui-selectmenu-menu ul {
+  border-radius: 0 0 20px 20px;
+  background-color: #58B4AE;
+  color: #F8F2EA;
+  font-family: "Architects Daughter", cursive;
+}
+
+.ui-selectmenu-menu ul .ui-state-active {
+  background-color: #58B4AE;
+  border: none;
+}
+
+.ui-selectmenu-menu ul .ui-state-active:hover {
+  background-color: #439690;
+}
+
+.ui-tooltip {
+  font-size: .7em;
+  -webkit-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.55);
+          box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.55);
+}
+/*# sourceMappingURL=style.css.map */
